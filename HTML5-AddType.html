@@ -1,0 +1,63 @@
+<!Doctype html>
+<!-- HTML5 에 들어서 새로 추가된 속성들-->
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="">
+  <style>
+  #드레그{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  </style>
+</head>
+<body>
+<h2>Example</h2>
+<div id="exampleSub">
+  <h3> 일반적인 p요소</h3>
+  <p> 이문장은 p요소로 작성되었습니다. </p>
+  <h3> contenteditabe="true"가 적용된 p요소</h3>
+  <p contenteditable="true" spellcheck="true" style="border:1px solid powderblue; display:inline;"> 이문장은 p요소로 작성되었습니다. </p>
+</div>
+<!-- 편집기능만 가능, 변경한 내용을 처리하기 위해선 자바스크립트와 서버
+측 프로그램 을 통해 구현해야함-->
+
+<div id="exampleSub2">
+  <p contextmenu="testContextmenu" > 이요소엔 Contextmenu속성이 <br>
+    적용되었습니다.</p>
+    <menu type="contextmenu" id="testContextmenu">
+      <command label="첫번쨰메뉴"/>
+      <command label="두번쨰메뉴"/>
+      <command label="세번쨰메뉴"/>
+    </menu>
+</div>
+<!-- 마우스 오른쪽 버튼 클릭시 메뉴 등판-->
+
+<div id="드레그">
+
+  <div class="item">
+    <h3 style="text-align:center">draggable="true"</h3>
+    <img src="1.jpg" alt="heart" draggable="true">
+  </div>
+
+  <div class="item">
+      <h3 style="text-align:center">draggable="False"</h3>
+    <img src="1.jpg" alt="heart" draggable="false" >
+  </div>
+</div>
+<!-- 드레그 가능하게 해주기 -->
+
+<div id="데이타-속성">
+  <h3>data-*</h3>
+  <div>
+    <button type="button" data-test="사용자 정의 데이터" onclick="dataTest(this)">
+      테스트버튼1
+    </button>
+    <button type="button" data-test="냠냠냠냠" onclick="dataTest(this)">
+      테스트버튼2
+    </button>
+</body>
+
+</html>
