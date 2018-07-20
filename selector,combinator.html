@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+<head>
+  <title>선택자,결합자 복습+정리</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="selector,combinator.css" type="text/css">
+</head>
+<body>
+<div id="예1">
+  <h1>CSS 선택자,결합자 복습+정리</h1>
+  <p>CSS 결합자는 2개의 선택자를 결합해 줍니다.</p>
+  <p>결합의 방법에 따라 각기 다른 효과를 갖습니다.</p>
+  <div>
+    <h4>CSS결합자의 종류</h4>
+    <p>CSS 결합자의 종류에는 하위 요소 결합자, 자식 요소 결합자, <br>
+      인접 형제 결합자, 형제 결합자가 있습니다. </p>
+    <ul>
+      <li><p>하위 요소 결합자는 앞의 선택자로 선택된 요소의 하위 요소 중<br>
+        뒤의 선택자와 일치하는 요소가 선택됩니다.</p>
+      <img src="결합자1.jpg"></li>
+      <li><p>자식 요소 결합자는 앞의 선택자로 선택된 요소의 직계 자손 요소<br>
+      중에서 뒤의 선택자와 일치하는 요소가 선택됩니다.</p>
+    <img src="결합자2.jpg"></li>
+      <li><p>인접 형제 결합자는 앞의 선택자와 동일한 레벨로, 뒤에 오는 요소<br>
+      중에서 뒤의 선택자와 일치하는 요소를 선택합니다.</p>
+    <img src="결합자3.jpg"></li>
+      <li><p>형제 결합자는 앞의 선택자와 동일한 레벨로 , 뒤에 오는 요소 중<br>
+      뒤의 선택자와 요소를 선택합니다.</p>
+    <img src="결합자4.jpg"></li>
+    </ul>
+  </div>
+  <p>CSS 선택자의 종류에 대해서 알아보면</p>
+  <h4>CSS 선택자의 종류</h4>
+  <p>태그(요소) 선택자</p>
+  <p>ID 선택자</p>
+  <p>클래스 선택자로 나뉩니다.</p>
+  <p>대략 중요한 것만 몇가지 찝어보면
+    <ol>
+      <li>속성선택자 - a[title] {<br>
+        [property]:[value];<br>
+      }</li>
+      <li>가상요소선택자 - a:hover{<br>
+        [property]:[value];<br>
+      }<!-- 가상요소 선택자는 요소의 상태를 조회하는 선택자로
+        hover는 마우스의 포인터를 특정요소에 올려놓았을때
+        반응 하는 대표적인예
+      visited,active,link등등이 있고 체크박스나 라디오버튼에서는
+    checked가 있다-->
+      </li>
+      <li>구조적 선택자 - div:nth-child(even){<br>
+        [property]:[value];<br>
+      }
+    </li>
+<!--구조적 선택자는 가상요소 선택자와 비슷하지만 요소의 상태가 아니라
+html의 구조를 조회한다는 차이점이 있고 예시로 들은 짝수번째 요소를 찾는
+것 이외에도 first-child,nth-of-type(n),not(S)등 여러 가지가 있다.-->
+  </ol>
+
+
+</div>
+<!-- 동일명의 CSS 파일에 정리-->
+</body>
+
+</html>

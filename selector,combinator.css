@@ -1,0 +1,35 @@
+/*#예1 div p{
+  border: 1px red solid;
+}
+하위 요소 결합자로서 div의 하위요소인 p를 선택하는 것으로, 기준 div 하위 요소인 li
+안에 있는 p요소가 모두 선택됨
+*/
+
+
+/*#예1 div>p{
+  border: 1px red solid;
+}
+자식 요소 결합자로 div의 하위요소중 바로 아랫단계의 하위요소인 p만 선택하는 것
+*/
+
+/*#예1 div+p{
+    border: 1px red solid;
+}
+인접 형제 결합자로서 div에 인접한 형제 요소를 선택하는 것이므로, div의 형제요소인
+p중 div 다음에 오는 첫 번째 것만 해당이 됨.
+*/
+
+/*#예1 div~p{
+  border: 1px red solid;
+}
+형제 결합자로 기준 div의 형제요소인p를 선택하는것, div의 형제 요소인 p중 기준div다음
+오는 모든 p요소가 해당됨*/
+
+/*#예1 div>p,div~p {
+  border: 1px red solid;
+}
+결합자의 결합은 , 를 통해서 이어서 사용가능함*/
+
+img{
+  border: 5px black dashed;
+}
