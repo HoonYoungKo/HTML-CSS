@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+<head>
+  <title>html-addtype3</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+<!--progress-->
+<h1>&lt;progress&gt;-진행상황표시</h1>
+<form id="progressTest" action="00_action.php" method="post">
+  <label for="progress">진행상황</label>
+  <progress id="progress" name="progress" max="1" value="0.5">50%</progress>
+  <button type="submit">전송</button>
+</form>
+<h1>&lt;meter&gt;-현재값의표시</h1>
+<form id="=meterTest" action="00_action.php" method="post">
+  <label for="meter">사용상황</label>
+  <meter id="meter" name="meter" min="0" max="1" value="0.5">50% 사용중</meter>
+  <button type="submit">전송</button>
+</form>
+<h1> &lt;form&gt;형식 연습</h1>
+<form>
+  이름 : <input type="text" name="username"> <br>
+  아이디 : <input type="text" name="userid"><br>
+  비밀번호 : <input type="password" name="userpassoword"><br>
+  연락처 : <input type="tel" name="phonenumer1" size="3"> -
+   <input type="tel" name="phonenumer2" size="4"> -
+    <input type="tel" name="phonenumer3" size="4"><br>
+  사진 : <input type="file" name="photo"><br>
+  성별 : <input type="radio" name="gender" value="m">남자
+   <input type="radio" name="gender" value="w">여자<br>
+  언어 : <input type="checkbox" name="lan" value="kor">한국
+   <input type="checkbox" name="lan" value="USA">미국
+    <input type="checkbox" name="lan" value="JAP">일본
+     <input type="checkbox" name="lan" value="CHI">중국<br>
+  자기소개 : <textarea rows="5" cols="20">간단히 입력하세요.</textarea><br>
+  언어 : <select>
+        <option>한국어</option>
+        <option>영어</option>
+        <option>일어</option>
+        <option>중국어</option>
+      </select><br>
+  좋아하는 음식: <select multiple="multiple">
+        <option>김치</option>
+        <option>치즈</option>
+        <option>스시</option>
+        <option>튀김</option>
+      </select><br>
+  <button type="submit">제출</button>
+</form>
+
+
+
+
+</body>
+
+</html>
