@@ -1,0 +1,28 @@
+.marginEx{
+  background-color: red;
+  height: 30px;
+  width: 50px;
+
+  margin: 0px 20px 15px 25px;
+}
+.paddingEx{
+  background-color: red;
+  height: 30px;
+  width: 50px;
+
+  margin: 0px 20px 15px 25px;
+  padding : 10px;
+}
+.box{
+  background-color: red;
+  height: 200px;
+  width: 200px;
+ box-sizing : border-box;
+ border : blue 5px dashed; /* solid dashed dotted가있음*/
+}
+body{
+  background-image: url('1.jpg');
+background-size: 30%;
+background-repeat:repeat;
+background-attachment: fixed;
+}

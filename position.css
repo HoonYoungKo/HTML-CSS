@@ -1,0 +1,43 @@
+.content1{
+  width:100px; height:100px;
+  border: 1px solid;
+  position:absolute;top:550px;left:320px;
+  z-index: 20;
+  background: red;
+  overflow: scroll;
+}
+
+.content2{
+  width:100px; height:100px;
+  border: 1px solid;
+  position:relative;top:100px;left:100px;
+}
+
+.content3{
+  width:100px; height:100px;
+  border: 1px solid;
+  position:fixed;top:500px; left:300px;
+  z-index: 10;
+  background: yellow;
+}
+
+.content4{
+  width:100px; height:100px;
+  border: 1px solid;
+  position:static;
+}
+h1{
+  text-shadow: 5px 10px 12px black;
+}
+
+body{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,a621b2+25,8ca51a+76,7db9e8+100 */
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(166,33,178,1) 25%, rgba(140,165,26,1) 76%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(166,33,178,1) 25%,rgba(140,165,26,1) 76%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(166,33,178,1) 25%,rgba(140,165,26,1) 76%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+background-repeat: no-repeat;
+background-size: 100%
+}
+/* http://www.colorzilla.com/gradient-editor/ 을 이용해 그라데이션 컬러 뽑기 */
