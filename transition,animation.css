@@ -1,0 +1,34 @@
+.rec{
+   height: 100px; width: 100px;
+  display: inline-block;
+  background: red;
+  transition-duration: 2s;
+}
+.rec:hover{
+  height: 300px; width: 100px;
+}
+.rec:active{
+  border-radius: 100px;
+   height: 100px; width: 100px;
+}
+.cir{
+  height: 100px; width: 100px;
+ display: inline-block;
+ background: powderblue;
+ border-radius: 100px;
+ animation-name: ani1;
+ animation-duration: 3s;
+ animation-timing-function: ease-in;
+ position: absolute; left: 0; top: 110px;
+}
+@keyframes ani1{
+  from{
+    left:0px; top:110px;
+  }
+  to{
+    left:500px; top:610px;
+  }
+}
+*{
+  margin:0; padding:0;
+}
